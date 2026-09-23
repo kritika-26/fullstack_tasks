@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horizontal Cards</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #111;
+            font-family: Arial, sans-serif;
+            scrollbar-width: none;
+        }
+
+        .container {
+
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            overflow-x: auto;
+            padding: 50px;
+            scroll-behavior: smooth;
+            padding-right: 50px;
+        }
+
+        .card {
+
+            /* Fixed size */
+            min-width: 400px;
+            height: 500px;
+            flex-shrink: 0;
+
+            position: sticky;
+            left: 50px;
+
+            display: flex;
+            flex-direction: column;
+
+            background-color: #222;
+
+            color: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+
+        /*
+        Image section
+        */
+        .card-image {
+
+            width: 100%;
+
+            height: 250px;
+
+            overflow: hidden;
+        }
+
+
+        /*
+        Image
+        */
+        .card-image img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        /*
+        Content section
+        */
+        .card-content {
+
+            padding: 25px;
+        }
+
+
+        /*
+        Heading
+        */
+        .card-content h2 {
+
+            margin-bottom: 10px;
+
+            font-size: 28px;
+        }
+
+
+        /*
+        Paragraph
+        */
+        .card-content p {
+
+            font-size: 16px;
+
+            line-height: 1.5;
+
+            color: #ccc;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- CARD 1 -->
+
+        <div class="card" id="card1">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg"
+                    alt="Mountain"
+                >
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>Mountains</h2>
+
+                <p>
+                    Explore beautiful mountains and enjoy
+                    the peaceful view of nature.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="card" id="card2">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.pexels.com/photos/37989190/pexels-photo-37989190.jpeg"
+                    alt="Beautiful Mountains"
+                >
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>Beautiful Mountains</h2>
+
+                <p>
+                    Explore beautiful mountains and enjoy
+                    the peaceful view of nature.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="card" id="card3">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.pexels.com/photos/6235455/pexels-photo-6235455.jpeg"
+                    alt="Lightning"
+                >
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>Lightning</h2>
+
+                <p>
+                    Experience the beauty and power
+                    of lightning in the night sky.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 4 -->
+
+        <div class="card" id="card4">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.pexels.com/photos/17512580/pexels-photo-17512580.jpeg"
+                    alt="Ocean"
+                >
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>Ocean</h2>
+
+                <p>
+                    Enjoy the peaceful beauty of the
+                    ocean and its endless horizon.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

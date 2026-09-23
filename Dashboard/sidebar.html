@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Sidebar Layout</title>
+  <style>
+    /* Reset & Page Setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    /* Sidebar Container */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 100vh;
+      background-color: #1e1e2f;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+    }
+
+    /* Sidebar Header / Logo area */
+    .sidebar-brand {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 32px;
+      padding-left: 12px;
+    }
+
+    /* Navigation Links */
+    .sidebar-menu {
+      list-style: none;
+    }
+
+    .sidebar-item {
+      margin-bottom: 8px;
+    }
+
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      color: #b3b3cc;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover & Active States */
+    .sidebar-link:hover,
+    .sidebar-link.active {
+      background-color: #74748a;
+      color: #ffffff;a
+    }
+
+    /* Page Main Content Area */
+    .main-content {
+      margin-left: 260px; /* Must equal the sidebar width */
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    /* Mobile Responsive View Setup */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 16px;
+      }
+
+      .sidebar-brand {
+        margin-bottom: 16px;
+      }
+
+      .sidebar-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .sidebar-item {
+        margin-bottom: 0;
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar Component -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">Dashboard</div>
+    <ul class="sidebar-menu">
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link active">Home</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">Analytics</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">Products</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" class="sidebar-link">Settings</a>
+      </li>
+    </ul>
+  </aside>
+
+  <!-- Main View Area -->
+  <main class="main-content">
+    
+  </main>
+
+</body>
+</html>
