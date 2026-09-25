@@ -1,0 +1,12 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "Responsive SaaS landing page using Tailwind CSS",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowly - SaaS Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-[#F8FAFC] font-['Inter'] text-[#475569]">
+
+    <header class="h-[72px]">
+        <nav class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6">
+            <a href="#" class="text-2xl font-bold text-[#0F172A]">
+                Flowly
+            </a>
+
+            <div class="hidden items-center gap-8 sm:flex">
+                <a href="#features" class="text-sm font-medium text-[#475569] transition hover:text-[#4F46E5]">
+                    Features
+                </a>
+                <a href="#solutions" class="text-sm font-medium text-[#475569] transition hover:text-[#4F46E5]">
+                    Solutions
+                </a>
+                <a href="#pricing" class="text-sm font-medium text-[#475569] transition hover:text-[#4F46E5]">
+                    Pricing
+                </a>
+                <a href="#contact" class="text-sm font-medium text-[#475569] transition hover:text-[#4F46E5]">
+                    Contact
+                </a>
+            </div>
+
+            <button id="menuButton" class="rounded-lg border border-[#E2E8F0] p-2 text-[#0F172A] sm:hidden">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobileMenu" class="hidden border-b border-[#E2E8F0] bg-white px-6 py-5 sm:hidden">
+            <div class="mx-auto flex max-w-[1200px] flex-col gap-5">
+                <a href="#features" class="text-sm font-medium text-[#475569]">
+                    Features
+                </a>
+                <a href="#solutions" class="text-sm font-medium text-[#475569]">
+                    Solutions
+                </a>
+                <a href="#pricing" class="text-sm font-medium text-[#475569]">
+                    Pricing
+                </a>
+                <a href="#contact" class="text-sm font-medium text-[#475569]">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="mx-auto flex min-h-[520px] max-w-[1200px] items-center px-6 py-20">
+            <div class="w-full max-w-[650px] text-center sm:text-left">
+
+                <span class="mb-5 inline-block rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-[#4F46E5]">
+                    Simple. Powerful. Productive.
+                </span>
+
+                <h1 class="text-[36px] font-bold leading-[1.1] text-[#0F172A] sm:text-[48px]">
+                    Manage your work with confidence
+                </h1>
+
+                <p class="mt-5 text-lg leading-[1.6] text-[#475569]">
+                    Flowly helps modern teams organize projects, collaborate seamlessly,
+                    and get more done from one simple workspace.
+                </p>
+
+                <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                    <a href="#get-started"
+                        class="rounded-lg bg-[#4F46E5] px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#4338CA]">
+                        Get Started
+                    </a>
+
+                    <a href="#features"
+                        class="rounded-lg border border-[#E2E8F0] bg-white px-6 py-3 text-center text-sm font-semibold text-[#0F172A] transition hover:border-[#4F46E5] hover:text-[#4F46E5]">
+                        Explore Features
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="features" class="mx-auto max-w-[1200px] px-6 pb-20">
+
+            <div class="text-center">
+                <h2 class="text-[32px] font-bold text-[#0F172A]">
+                    Everything you need to work better
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#475569]">
+                    Powerful tools designed to help your team stay organized,
+                    productive, and connected.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-6 min-[640px]:grid-cols-2 lg:grid-cols-3">
+
+                <article class="rounded-xl border border-[#E2E8F0] bg-white p-6">
+
+                    <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-100 text-[#4F46E5]">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-[#0F172A]">
+                        Smart Task Management
+                    </h3>
+
+                    <p class="mt-3 text-base leading-7 text-[#475569]">
+                        Create, organize, and track tasks with a simple workspace
+                        built for modern teams.
+                    </p>
+
+                </article>
+
+                <article class="rounded-xl border border-[#E2E8F0] bg-white p-6">
+
+                    <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-100 text-[#4F46E5]">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-[#0F172A]">
+                        Team Collaboration
+                    </h3>
+
+                    <p class="mt-3 text-base leading-7 text-[#475569]">
+                        Keep your team connected with shared workspaces and
+                        seamless collaboration tools.
+                    </p>
+
+                </article>
+
+                <article class="rounded-xl border border-[#E2E8F0] bg-white p-6">
+
+                    <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-indigo-100 text-[#4F46E5]">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-[#0F172A]">
+                        Powerful Performance
+                    </h3>
+
+                    <p class="mt-3 text-base leading-7 text-[#475569]">
+                        Improve productivity with fast workflows and tools
+                        designed around your team's needs.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="solutions" class="mx-auto max-w-[1200px] px-6 pb-20">
+
+            <div class="rounded-2xl bg-[#0F172A] px-6 py-12 text-center sm:px-12">
+                <h2 class="text-[32px] font-bold text-white">
+                    Built for modern teams
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300">
+                    Bring your projects, tasks, and team communication together
+                    in one organized workspace.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="pricing" class="mx-auto max-w-[1200px] px-6 pb-20">
+
+            <div class="text-center">
+
+                <h2 class="text-[32px] font-bold text-[#0F172A]">
+                    Start working smarter
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-xl text-base leading-7 text-[#475569]">
+                    Get everything you need to manage your team's work efficiently.
+                </p>
+
+                <a id="get-started" href="#contact"
+                    class="mt-8 inline-block rounded-lg bg-[#4F46E5] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#4338CA]">
+                    Get Started Today
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="contact" class="border-t border-[#E2E8F0] bg-white">
+
+        <div class="mx-auto flex max-w-[1200px] flex-col gap-3 px-6 py-8 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
+
+            <p class="text-sm text-[#475569]">
+                © 2026 Flowly. All rights reserved.
+            </p>
+
+            <p class="text-sm text-[#475569]">
+                Simple tools for productive teams.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
