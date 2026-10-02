@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cartify - Product Listing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span> C </span>
+            Cartify
+        </div>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput"
+                placeholder="Search for products..."
+            >
+            <span>🔍</span>
+        </div>
+
+        <div class="nav-icons">
+            <span>🛒</span>
+            <span>👤</span>
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            Electronics → Laptops
+        </div>
+
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+
+            <button id="filterButton">
+                ☰ Filters
+            </button>
+
+            <p id="resultCount">
+                Showing 8 results
+            </p>
+
+            <div class="sort">
+                <label for="sortSelect">Sort by:</label>
+
+                <select id="sortSelect">
+                    <option value="popular">Popularity</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+
+
+            <!-- Filter Sidebar -->
+            <aside class="sidebar" id="sidebar">
+
+                <div class="filter-heading">
+                    <h2>Filters</h2>
+
+                    <button id="closeFilter">
+                        ✕
+                    </button>
+                </div>
+
+
+                <!-- Category -->
+                <div class="filter-group">
+
+                    <h3>Category</h3>
+
+                    <label>
+                        <input type="checkbox" value="Laptop">
+                        Laptops
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Gaming">
+                        Gaming
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Tablet">
+                        Tablets
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Accessories">
+                        Accessories
+                    </label>
+
+                </div>
+
+
+                <!-- Price -->
+                <div class="filter-group">
+
+                    <h3>Price Range</h3>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="price"
+                            value="all"
+                            checked
+                        >
+                        All Prices
+                    </label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="price"
+                            value="low"
+                        >
+                        ₹0 - ₹30,000
+                    </label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="price"
+                            value="medium"
+                        >
+                        ₹30,001 - ₹60,000
+                    </label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="price"
+                            value="high"
+                        >
+                        ₹60,001+
+                    </label>
+
+                </div>
+
+
+                <!-- Brand -->
+                <div class="filter-group">
+
+                    <h3>Brand</h3>
+
+                    <label>
+                        <input type="checkbox" value="Dell">
+                        Dell
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="HP">
+                        HP
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Lenovo">
+                        Lenovo
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="Apple">
+                        Apple
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="ASUS">
+                        ASUS
+                    </label>
+
+                </div>
+
+
+                <button class="apply-btn">
+                    Apply Filters
+                </button>
+
+            </aside>
+
+
+            <!-- Products -->
+            <section class="products">
+
+                <div 
+                    class="products-grid" 
+                    id="productsGrid"
+                >
+
+                    <!-- Products will come here -->
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
